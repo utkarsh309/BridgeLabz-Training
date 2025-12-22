@@ -5,8 +5,8 @@ public class DistanceConversion {
         //Create a variable to store distance in kilometer
         double distanceInKilometers=10.8;
 
-        //Conversion factor provided: 1km = 1.6 miles
-        double conversionFactor=1.6;
+        //Conversion factor provided: 1km = 0.62 miles
+        double conversionFactor=0.62;
 
         //Calculate miles
         double distanceInMiles=conversionFactor*distanceInKilometers;
