@@ -1,8 +1,8 @@
-<h2 align="center"><b>📘 BridgeLabz Java Training – Daily Progress Log</b></h2>
+<h2 align="center"><b>📘 BridgeLabz Training – Daily Progress Log</b></h2>
 
 
 Trainee: Utkarsh  
-Program: BridgeLabz – Capgemini Java Training  
+ 
     
 
 🔹 **20-Dec-2025 (Saturday):**  
