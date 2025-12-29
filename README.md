@@ -26,6 +26,9 @@
 -Studied exception handling in Java.  
 -Solved string-based programming questions.  
 
+🔹 **29-Dec-2025 (Monday):**  
+-Solved Scenerio based questions.
+
 
 
 
