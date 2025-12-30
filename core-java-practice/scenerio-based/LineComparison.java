@@ -45,6 +45,21 @@ public class LineComparison {
             System.out.println("Lines are not equal in length.");
         }
 
+        //use case 3: comapre one line with another line
+        //Call the Method to compare two lengths
+        int comparisonResult=compareLine(lengthOne,lengthTwo);
+        if(comparisonResult>0){
+            System.out.println("First line is longer than second line.");
+        }
+        else if(comparisonResult<0){
+            System.out.println("First line is shorter than second line.");
+        }
+        else{
+            System.out.println("Both lines are equal in length.");
+        }
+
+        //Close the scanner
+        input.close();
 
 
     }
@@ -54,5 +69,11 @@ public class LineComparison {
 
         double length = Math.sqrt(Math.pow((x2 - x1), 2) + Math.pow((y2 - y1), 2));
         return length;
+    }
+
+    //Use case 3: Compare one line with another line
+    //Method to compare two lengths
+    public static int compareLine(Double lengthOne, Double lengthTwo){
+        return lengthOne.compareTo(lengthTwo);
     }
 }
