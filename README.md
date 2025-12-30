@@ -29,6 +29,11 @@
 🔹 **29-Dec-2025 (Monday):**  
 -Solved Scenerio based questions.
 
+🔹 **30-Dec-2025 (Tuesday):**  
+-Learned oops concept.  
+-Solved LineComparison Problem.  
+-Solved Snake Ladder Problem.
+
 
 
 
