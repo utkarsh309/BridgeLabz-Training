@@ -17,11 +17,34 @@ public class LineComparison {
         int y2=input.nextInt();
 
         //Call the method to calculate length of first line
-        double lengthOne=calculateLength(x1, y1, x2, y2);
+        Double lengthOne=calculateLength(x1, y1, x2, y2);
 
         //display length of first line
         System.out.println("Length of first line is: " + lengthOne);
-        
+
+        //user input for second line coordinates
+        System.out.println("Enter x3 cordinate of second line:");
+        int x3=input.nextInt();
+        System.out.println("Enter y3 cordinate of second line:");
+        int y3=input.nextInt();
+        System.out.println("Enter x4 cordinate of second line:");
+        int x4=input.nextInt();
+        System.out.println("Enter y4 cordinate of second line:");
+        int y4=input.nextInt();
+
+        //Call the method to calculate length of second line
+        Double lengthTwo=calculateLength(x3, y3, x4, y4);
+        //display length of second line
+        System.out.println("Length of second line is: " + lengthTwo);
+        //Use case 2: Compare lengths of two lines
+        //Compare lengths of two lines
+        if(lengthOne.equals(lengthTwo)){
+            System.out.println("Both lines are equal in length.");
+        }
+        else{
+            System.out.println("Lines are not equal in length.");
+        }
+
 
 
     }
