@@ -32,7 +32,10 @@
 🔹 **30-Dec-2025 (Tuesday):**  
 -Learned oops concept.  
 -Solved LineComparison Problem.  
--Solved Snake Ladder Problem.
+-Solved Snake Ladder Problem.  
+
+🔹 **31-Dec-2025 (Wednesday):**  
+-Solved class and object level 1 and level 2 problems.
 
 
 
