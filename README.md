@@ -85,22 +85,13 @@ The repository is updated regularly to maintain a clear and transparent record o
 
 ---
 
-## 📊 Current Status
-
-**Completed:**
-- Java fundamentals
-- Control flow statements
-- Arrays, methods, and strings
-- Exception handling
-- Scenario-based problems
-- Basic LeetCode Java questions
-
-**Next Steps:**
-- Advanced Object-Oriented Programming concepts  
-- More LeetCode problem-solving  
-- Code optimization and best practices  
+### 🔹 01-Jan-2026 (Thursday)
+- Studied Java keywords including `this`, `static`, `final`, and `instanceof`.
+- Understood their usage, scope, and real-world applications.
+- Solved programming problems based on these concepts.
 
 ---
+
 
 ## 📈 Progress Tracking
 
