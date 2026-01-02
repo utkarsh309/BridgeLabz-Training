@@ -92,6 +92,11 @@ The repository is updated regularly to maintain a clear and transparent record o
 
 ---
 
+### 🔹 02-Jan-2026 (Friday)
+- Studied Object oriented design principles.
+
+---
+
 
 ## 📈 Progress Tracking
 
