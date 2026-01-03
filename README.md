@@ -97,6 +97,11 @@ The repository is updated regularly to maintain a clear and transparent record o
 
 ---
 
+### 🔹 03-Jan-2026 (Saturday)
+- Studied inheritance in Java and its different types.
+- Solved programming problems based on inheritance concepts.
+
+
 
 ## 📈 Progress Tracking
 
