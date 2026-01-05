@@ -101,6 +101,14 @@ The repository is updated regularly to maintain a clear and transparent record o
 - Studied inheritance in Java and its different types.
 - Solved programming problems based on inheritance concepts.
 
+---
+
+### 🔹 05-Jan-2026 (Monday)
+- Studied Object-Oriented Programming (OOP) concepts in Java.
+- Learned and practiced encapsulation, abstraction, polymorphism, and interfaces.
+- Solved OOP-based programming problems to strengthen concept understanding.
+
+---
 
 
 ## 📈 Progress Tracking
