@@ -110,6 +110,11 @@ The repository is updated regularly to maintain a clear and transparent record o
 
 ---
 
+### 🔹 06-Jan-2026 (Tuesday)
+- Solved OOP-based scenerio questions and leetcode questions.
+
+---
+
 
 ## 📈 Progress Tracking
 
