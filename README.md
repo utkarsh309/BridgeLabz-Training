@@ -22,16 +22,6 @@ The repository is updated regularly to maintain a clear and transparent record o
 
 ---
 
-## 🧠 Learning Approach
-
-- Focus on logic before implementation  
-- Write clean, readable, and modular code  
-- Handle edge cases and validations  
-- Practice scenario-based problems  
-- Improve solutions incrementally  
-
----
-
 ## 🗓 Daily Progress Log
 
 ### 🔹 20-Dec-2025 (Saturday)
@@ -41,13 +31,13 @@ The repository is updated regularly to maintain a clear and transparent record o
 
 ---
 
-### 🔹 22-Dec-2025 (Monday)
+### 🔹 [22-Dec-2025 (Monday)](https://github.com/utkarsh309/BridgeLabz-Training/tree/core-java-practice/core-java-practice/gcr-codebase/programming-elements)
 - Studied basic Java syntax and best coding practices.
 - Solved Programming Elements practice questions.
 
 ---
 
-### 🔹 23-Dec-2025 (Tuesday)
+### 🔹 [23-Dec-2025 (Tuesday)](https://github.com/utkarsh309/BridgeLabz-Training/tree/core-java-practice/core-java-practice/gcr-codebase/control-flow)
 - Studied control flow statements.
 - Learned GitHub commands.
 - Solved Control Flow questions.
@@ -55,64 +45,69 @@ The repository is updated regularly to maintain a clear and transparent record o
 
 ---
 
-### 🔹 24-Dec-2025 (Wednesday)
+### 🔹 [24-Dec-2025 (Wednesday)](https://github.com/utkarsh309/BridgeLabz-Training/tree/core-java-practice/core-java-practice/gcr-codebase/arrays)
 - Learned array declaration, initialization, and traversal.
 - Solved Level 1 and Level 2 array-based problems.
 
 ---
 
-### 🔹 26-Dec-2025 (Friday)
+### 🔹 [26-Dec-2025 (Friday)](https://github.com/utkarsh309/BridgeLabz-Training/tree/core-java-practice/core-java-practice/gcr-codebase/string)
 - Learned string concepts and built-in string methods.
 - Studied exception handling in Java.
 - Solved string-based programming questions.
 
 ---
 
-### 🔹 29-Dec-2025 (Monday)
+### 🔹 [29-Dec-2025 (Monday)](https://github.com/utkarsh309/BridgeLabz-Training/tree/core-java-practice/core-java-practice/scenerio-based)
 - Solved scenario-based Java problems.
 
 ---
 
-### 🔹 30-Dec-2025 (Tuesday)
+### 🔹 [30-Dec-2025 (Tuesday)](https://github.com/utkarsh309/BridgeLabz-Training/tree/core-java-practice/core-java-practice/scenerio-based)
 - Learned Object-Oriented Programming (OOP) concepts.
 - Solved Line Comparison problem.
 - Solved Snake and Ladder problem.
 
 ---
 
-### 🔹 31-Dec-2025 (Wednesday)
+### 🔹 [31-Dec-2025 (Wednesday)](https://github.com/utkarsh309/BridgeLabz-Training/tree/oops-practice/oops-practice/gcr-codebase/class-and-object)
 - Solved Class and Object Level 1 and Level 2 problems.
 
 ---
 
-### 🔹 01-Jan-2026 (Thursday)
+### 🔹 [01-Jan-2026 (Thursday)](https://github.com/utkarsh309/BridgeLabz-Training/tree/oops-practice/oops-practice/gcr-codebase/this-static-final)
 - Studied Java keywords including `this`, `static`, `final`, and `instanceof`.
 - Understood their usage, scope, and real-world applications.
 - Solved programming problems based on these concepts.
 
 ---
 
-### 🔹 02-Jan-2026 (Friday)
+### 🔹 [02-Jan-2026 (Friday)](https://github.com/utkarsh309/BridgeLabz-Training/tree/oops-practice/oops-practice/gcr-codebase/object-oriented-design-principles)
 - Studied Object oriented design principles.
 
 ---
 
-### 🔹 03-Jan-2026 (Saturday)
+### 🔹 [03-Jan-2026 (Saturday)](https://github.com/utkarsh309/BridgeLabz-Training/tree/oops-practice/oops-practice/gcr-codebase/inheritance)
 - Studied inheritance in Java and its different types.
 - Solved programming problems based on inheritance concepts.
 
 ---
 
-### 🔹 05-Jan-2026 (Monday)
+### 🔹 [05-Jan-2026 (Monday)](https://github.com/utkarsh309/BridgeLabz-Training/tree/oops-practice/oops-practice/gcr-codebase/oops-pillars)
 - Studied Object-Oriented Programming (OOP) concepts in Java.
 - Learned and practiced encapsulation, abstraction, polymorphism, and interfaces.
 - Solved OOP-based programming problems to strengthen concept understanding.
 
 ---
 
-### 🔹 06-Jan-2026 (Tuesday)
+### 🔹 [06-Jan-2026 (Tuesday)](https://github.com/utkarsh309/BridgeLabz-Training/tree/oops-practice/oops-practice/scenerio-based)
 - Solved OOP-based scenerio questions and leetcode questions.
 
+---
+
+### 🔹 [07-Jan-2026 (Wednesday)](https://github.com/utkarsh309/BridgeLabz-Training/tree/oops-practice/oops-practice/scenerio-based)
+- Solved Cab Booking and Banking System scenario-based problems.
+  
 ---
 
 
