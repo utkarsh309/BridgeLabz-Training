@@ -110,6 +110,12 @@ The repository is updated regularly to maintain a clear and transparent record o
   
 ---
 
+### 🔹 [08-Jan-2026 (Thursday)]
+- Studied Data Structures and Algorithms (DSA) concepts.
+- Started solving problems based on Linked Lists.
+
+---
+
 
 ## 📈 Progress Tracking
 
