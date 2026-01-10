@@ -116,6 +116,11 @@ The repository is updated regularly to maintain a clear and transparent record o
 
 ---
 
+### 🔹 [09-Jan-2026 (Friday)]
+- Solved Hospital Patient Management System and Vehicle Rental System scenario-based problems.
+
+---
+
 
 ## 📈 Progress Tracking
 
