@@ -121,6 +121,11 @@ The repository is updated regularly to maintain a clear and transparent record o
 
 ---
 
+### 🔹 [12-Jan-2026 (Monday)]
+- Solved oops scenario-based problems.
+
+---
+
 
 ## 📈 Progress Tracking
 
