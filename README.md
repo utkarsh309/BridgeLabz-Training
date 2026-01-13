@@ -126,6 +126,12 @@ The repository is updated regularly to maintain a clear and transparent record o
 
 ---
 
+### 🔹 [13-Jan-2026 (Tuesday)]
+-  Studied and practiced resolving merge conflicts in Git.
+- Solved scenario-based programming questions.
+
+---
+
 
 ## 📈 Progress Tracking
 
