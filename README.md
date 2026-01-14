@@ -132,6 +132,11 @@ The repository is updated regularly to maintain a clear and transparent record o
 
 ---
 
+### 🔹 [14-Jan-2026 (Wednesday)]
+-  Studied stack,queue and hashmap implementations.
+
+---
+
 
 ## 📈 Progress Tracking
 
