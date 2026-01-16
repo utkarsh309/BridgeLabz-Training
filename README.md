@@ -137,6 +137,11 @@ The repository is updated regularly to maintain a clear and transparent record o
 
 ---
 
+### 🔹 [15-Jan-2026 (Thursday)]
+-  Studied sorting algorithms(Bubble Sort, Insertion Sort ,Merge Sort, Quick Sort).
+
+---
+
 
 ## 📈 Progress Tracking
 
