@@ -142,6 +142,11 @@ The repository is updated regularly to maintain a clear and transparent record o
 
 ---
 
+### 🔹 [16-Jan-2026 (Friday)]
+-  Solved sorting algorithms(Bubble Sort, Insertion Sort ,Merge Sort, Quick Sort) problems.
+
+---
+
 
 ## 📈 Progress Tracking
 
