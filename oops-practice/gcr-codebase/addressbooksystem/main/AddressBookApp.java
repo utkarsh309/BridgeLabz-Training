@@ -10,9 +10,7 @@ public class AddressBookApp {
 		
 		AddressBookController controller=new AddressBookController();
 		
-		controller.addContactFromUser(); //UC2
-		controller.editContactFromUser(); //UC3
-		controller.deleteContactFromUser();  // UC4
+		controller.startApplication();
 		
 	}
 
