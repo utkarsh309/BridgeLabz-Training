@@ -1,9 +1,9 @@
-package addressbooksystem.controller;
+package addressbooksystem.presentation;
 
 import java.util.Scanner;
 import addressbooksystem.service.ContactService;
 
-public class AddressBookController {
+public class AddressBookUI {
 
     private final ContactService service = new ContactService();
     private final Scanner scanner = new Scanner(System.in);
