@@ -147,6 +147,25 @@ The repository is updated regularly to maintain a clear and transparent record o
 
 ---
 
+### 🔹 [19-Jan-2026 (Monday)]
+-  Solved Linear Search and Binary Search problems.
+- Implemented Address Book System use cases (UC1 to UC5).  
+
+---
+
+### 🔹 [20-Jan-2026 (Tuesday)]
+-  Solved problems related to algorithm runtime analysis.
+- Implemented the Traffic Manager scenario-based problem.  
+
+---
+
+### 🔹 [21-Jan-2026 (Wednesday)]
+-  Implemented Address Book System use cases (UC6 to UC8).
+
+---
+
+
+
 
 ## 📈 Progress Tracking
 
