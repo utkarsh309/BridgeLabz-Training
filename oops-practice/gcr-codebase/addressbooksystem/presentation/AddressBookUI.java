@@ -1,120 +1,182 @@
 package addressbooksystem.presentation;
 
 import java.util.Scanner;
+import addressbooksystem.service.AddressBookService;
 import addressbooksystem.service.ContactService;
 
 public class AddressBookUI {
 
-    private final ContactService service = new ContactService();
     private final Scanner scanner = new Scanner(System.in);
+    private final AddressBookService systemService = new AddressBookService();
 
-    public void startApplication() {
+    public void start() {
 
-        boolean isRunning = true;
+        boolean running = true;
 
-        while (isRunning) {
-            System.out.println("\n Address Book Menu ");
-            System.out.println("1. Add Contact");
-            System.out.println("2. Edit Contact");
-            System.out.println("3. Delete Contact");
-            System.out.println("4. Exit");
-            System.out.print("Enter your choice: ");
+        while (running) {
+            System.out.println("\n Address Book System ");
+            System.out.println("1. Create Address Book");
+            System.out.println("2. Open Address Book");
+            System.out.println("3. Show All Address Books");
+            System.out.println("4. Search Person by City/State");
+            System.out.println("5. Exit");
+            System.out.print("Enter choice: ");
 
             int choice = scanner.nextInt();
-            scanner.nextLine(); // consume newline
+            scanner.nextLine();
 
             switch (choice) {
-                case 1:
-                    addContactFromUser();
-                    break;
-
-                case 2:
-                    editContactFromUser();
-                    break;
-
-                case 3:
-                    deleteContactFromUser();
-                    break;
-
+                case 1 :
+                	createAddressBook();
+                	break;
+                case 2 :
+                	openAddressBook();
+                	break;
+                case 3 :
+                	systemService.showAllAddressBooks();
+                	break;
                 case 4:
-                    isRunning = false;
-                    System.out.println("Thank you for using Address Book!");
-                    break;
-
-                default:
-                    System.out.println("Invalid choice. Please try again.");
+                	searchPerson();
+                	break;
+                case 5 :
+                	running = false;
+                	break;
+                default :
+                	System.out.println("Invalid choice");
             }
         }
     }
 
-    public void addContactFromUser() {
-        System.out.print("Enter First Name: ");
-        String firstName = scanner.nextLine();
+    private void createAddressBook() {
+        System.out.print("Enter new Address Book name: ");
+        String name = scanner.nextLine();
 
-        System.out.print("Enter Last Name: ");
-        String lastName = scanner.nextLine();
-
-        System.out.print("Enter Address: ");
-        String address = scanner.nextLine();
-
-        System.out.print("Enter City: ");
-        String city = scanner.nextLine();
-
-        System.out.print("Enter State: ");
-        String state = scanner.nextLine();
-
-        System.out.print("Enter Zip: ");
-        String zip = scanner.nextLine();
-
-        System.out.print("Enter Phone Number: ");
-        String phoneNumber = scanner.nextLine();
-
-        System.out.print("Enter Email: ");
-        String email = scanner.nextLine();
-
-        service.addNewContact(firstName, lastName, address,
-                city, state, zip, phoneNumber, email);
+        if (systemService.createAddressBook(name)) {
+            System.out.println("Address Book created successfully!");
+        } else {
+            System.out.println("Address Book with this name already exists!");
+        }
     }
 
-    public void editContactFromUser() {
+    private void openAddressBook() {
+        System.out.print("Enter Address Book name to open: ");
+        String name = scanner.nextLine();
+
+        if (!systemService.addressBookExists(name)) {
+            System.out.println("Address Book not found!");
+            return;
+        }
+
+        ContactService contactService = systemService.getAddressBook(name);
+        addressBookMenu(contactService);
+    }
+    
+    private void searchPerson() {
+
+        System.out.print("Enter City or State to search: ");
+        String value = scanner.nextLine();
+
+        systemService.searchPersonByCityOrState(value);
+    }
+
+
+    private void addressBookMenu(ContactService service) {
+
+        boolean active = true;
+
+        while (active) {
+            System.out.println("\n Address Book Menu ");
+            System.out.println("1. Add Contact");
+            System.out.println("2. Edit Contact");
+            System.out.println("3. Delete Contact");
+            System.out.println("4. Back");
+            System.out.print("Enter choice: ");
+
+            int choice = scanner.nextInt();
+            scanner.nextLine();
+
+            switch (choice) {
+                case 1 :
+                	addContact(service);
+                	break;
+                case 2 :
+                	editContact(service);
+                	break;
+                case 3 :
+                	deleteContact(service);
+                	break;
+                case 4 :
+                	active = false;
+                	break;
+                default :
+                	System.out.println("Invalid choice");
+            }
+        }
+    }
+
+    private void addContact(ContactService service) {
+        System.out.print("First Name: ");
+        String firstName = scanner.nextLine();
+
+        System.out.print("Last Name: ");
+        String lastName = scanner.nextLine();
+
+        System.out.print("Address: ");
+        String address = scanner.nextLine();
+
+        System.out.print("City: ");
+        String city = scanner.nextLine();
+
+        System.out.print("State: ");
+        String state = scanner.nextLine();
+
+        System.out.print("Zip: ");
+        String zip = scanner.nextLine();
+
+        System.out.print("Phone: ");
+        String phone = scanner.nextLine();
+
+        System.out.print("Email: ");
+        String email = scanner.nextLine();
+
+        service.addNewContact(firstName, lastName, address, city, state, zip, phone, email);
+    }
+
+    private void editContact(ContactService service) {
         System.out.print("Enter First Name to Edit: ");
         String firstName = scanner.nextLine();
 
-        System.out.print("Enter New Address: ");
+        System.out.print("New Address: ");
         String address = scanner.nextLine();
 
-        System.out.print("Enter New City: ");
+        System.out.print("New City: ");
         String city = scanner.nextLine();
 
-        System.out.print("Enter New State: ");
+        System.out.print("New State: ");
         String state = scanner.nextLine();
 
-        System.out.print("Enter New Zip: ");
+        System.out.print("New Zip: ");
         String zip = scanner.nextLine();
 
-        System.out.print("Enter New Phone Number: ");
+        System.out.print("New Phone: ");
         String phone = scanner.nextLine();
 
-        System.out.print("Enter New Email: ");
+        System.out.print("New Email: ");
         String email = scanner.nextLine();
 
-        boolean isUpdated = service.updateContact(firstName, address, city, state, zip, phone, email);
-
-        if (isUpdated) {
-            System.out.println("Contact updated successfully!");
+        if (service.updateContact(firstName, address, city, state, zip, phone, email)) {
+            System.out.println("Contact updated!");
         } else {
             System.out.println("Contact not found!");
         }
     }
 
-    public void deleteContactFromUser() {
+    private void deleteContact(ContactService service) {
         System.out.print("Enter First Name to Delete: ");
         String firstName = scanner.nextLine();
 
-        boolean isDeleted = service.deleteContact(firstName);
-
-        if (isDeleted) {
-            System.out.println("Contact deleted successfully!");
+        if (service.deleteContact(firstName)) {
+            System.out.println("Contact deleted!");
         } else {
             System.out.println("Contact not found!");
         }

@@ -8,7 +8,7 @@ public class AddressBookApp {
 		
 		AddressBookUI ui=new AddressBookUI();
 		
-		ui.startApplication();
+		ui.start();
 		
 	}
 
