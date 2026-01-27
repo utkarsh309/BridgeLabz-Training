@@ -174,6 +174,12 @@ The repository is updated regularly to maintain a clear and transparent record o
 
 ---
 
+### 🔹 [27-Jan-2026 (Tuesday)]
+-  Studied exception handling in Java and solved related practice problems.
+- Implemented the Lexical Twist scenario-based problem.
+
+---
+
 
 
 
