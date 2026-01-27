@@ -164,6 +164,16 @@ The repository is updated regularly to maintain a clear and transparent record o
 
 ---
 
+### 🔹 [22-Jan-2026 (Thursday)]
+-  Studied Java Collections framework and its core concepts.
+
+---
+
+### 🔹 [23-Jan-2026 (Friday)]
+-  Solved practice problems based on the Java Collections framework.
+
+---
+
 
 
 
