@@ -180,6 +180,13 @@ The repository is updated regularly to maintain a clear and transparent record o
 
 ---
 
+### 🔹 [28-Jan-2026 (Wednesday)]
+- Studied regular expressions (Regex) in Java.
+- Solved the Flip Key scenario-based problem.
+
+---
+
+
 
 
 
