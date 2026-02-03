@@ -22,16 +22,17 @@ public class CreateObjectUsingReflection {
 
     public static void main(String[] args) throws Exception {
 
-        // Load class dynamically
-        Class<?> cls = Class.forName("Student");
+        // Load class dynamically (FIXED)
+        Class<?> cls = Class.forName("reflection.Student");
 
         // Get constructor
-        Constructor<?> constructor =cls.getDeclaredConstructor(int.class, String.class);
+        Constructor<?> constructor =
+                cls.getDeclaredConstructor(int.class, String.class);
 
-        // Create object dynamically (no new keyword)
+        // Create object dynamically
         Object obj = constructor.newInstance(101, "Rahul");
 
-        // Type cast
+        // Type cast and use
         Student student = (Student) obj;
         student.display();
     }
