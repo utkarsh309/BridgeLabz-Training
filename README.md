@@ -186,6 +186,39 @@ The repository is updated regularly to maintain a clear and transparent record o
 
 ---
 
+### 🔹 [29-Jan-2026 (Thursday)]
+-  Solved practice problems based on regex.
+-  Solved the Future logistics scenario-based problem.
+
+---
+
+### 🔹 [30-Jan-2026 (Friday)]
+-  Solved practice problems based on regex.
+-  Solved the Future logistics scenario-based problem.
+
+---
+
+### 🔹 [02-Feb-2026 (Monday)]
+-  Studied about annotations and reflections and solved problems based on them.
+- Solved the Aerovigil scenario-based problem.
+
+---
+
+### 🔹 [03-Feb-2026 (Tuesday)]
+-  Studied and solved problems based on CSV data handling.
+- Solved the Factory robot hazard scenario-based problem.
+
+---
+
+### 🔹 [04-Feb-2026 (Wednesday)]
+-  Studied about functional interface and lamba expressions and solved problems based on them.
+- Solved the StreamBuzz scenario-based problem.
+
+---
+
+
+
+
 
 
 
