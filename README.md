@@ -213,13 +213,34 @@ The repository is updated regularly to maintain a clear and transparent record o
 ### 🔹 [04-Feb-2026 (Wednesday)]
 -  Studied about functional interface and lamba expressions and solved problems based on them.
 - Solved the StreamBuzz scenario-based problem.
+---
+
+### 🔹 [05-Feb-2026 (Thursday)]
+-   Studied and solved problems based on JSON data.
+---
+
+### 🔹 [06-Feb-2026 (Friday)]
+-    Studied and solved problems based on Stream api.
+---
+
+### 🔹 [07-Feb-2026 (Saturday)]
+-    Studied and solved problems based on Collectors.
+---
+
+### 🔹 [09-Feb-2026 (Monday)]
+-    Studied about the Design principle and design pattern.
 
 ---
 
+### 🔹 [10-Feb-2026 (Tuesday)]
+-    Studied and solved problems based on Multi-threading.
 
+---
 
+### 🔹 [11-Feb-2026 (Wednesday)]
+-    Studied JDBC-DBMS concepts.
 
-
+---
 
 
 
