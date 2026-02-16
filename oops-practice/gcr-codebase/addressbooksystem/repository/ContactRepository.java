@@ -1,8 +1,10 @@
 package addressbooksystem.repository;
 
 import java.util.List;
-import java.util.ArrayList;
+
 import addressbooksystem.model.Contact;
+
+import java.util.ArrayList;
 
 //UC-2: Add new contact to contact list
 public class ContactRepository {

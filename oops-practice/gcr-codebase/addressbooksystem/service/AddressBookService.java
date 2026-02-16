@@ -1,8 +1,9 @@
 package addressbooksystem.service;
 
-import addressbooksystem.model.Contact;
 import java.util.HashMap;
 import java.util.Map;
+
+import addressbooksystem.model.Contact;
 
 public class AddressBookService {
 

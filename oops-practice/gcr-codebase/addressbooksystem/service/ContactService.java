@@ -1,8 +1,9 @@
 package addressbooksystem.service;
 
-import addressbooksystem.repository.ContactRepository;
-import addressbooksystem.model.Contact;
 import java.util.List;
+
+import addressbooksystem.model.Contact;
+import addressbooksystem.repository.ContactRepository;
 
 public class ContactService {
 
@@ -12,21 +13,17 @@ public class ContactService {
 			String city, String state, String zip,
 			String phoneNumber, String email) {
 		
-		//UC: 7 Avoid duplicate contact 
-		for(Contact existingContact:repository.getAllContacts()) {
-			if(existingContact.getFirstName().equalsIgnoreCase(firstName)
-					&&existingContact.getLastName().equalsIgnoreCase(lastName)) {
-				
-				System.out.println("Duplicate contact found. Cannot add!");
-				return;
-			}
+	
+		Contact newContact =new Contact(firstName, lastName, address,
+                city, state, zip, phoneNumber, email);
+		//UC-7
+		// Using Collection contains() which internally uses equals()
+		if (repository.getAllContacts().contains(newContact)) {
+		    System.out.println("Duplicate contact found. Cannot add!");
+		    return;
 		}
 
-		Contact contact =new Contact(firstName, lastName, address,
-                city, state, zip, phoneNumber, email);
-		
-		repository.addContact(contact);
-		
+		repository.addContact(newContact);
 		System.out.println("Contact added successfully");
 	}
 	

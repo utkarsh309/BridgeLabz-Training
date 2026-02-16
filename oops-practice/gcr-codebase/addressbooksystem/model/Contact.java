@@ -92,6 +92,29 @@ public class Contact {
 		this.email = email;
 	}
 	
+	
+	@Override
+	public boolean equals(Object obj) {
+		if(this==obj) {
+			return true;
+		}
+		
+		if(obj==null||getClass()!=obj.getClass()) {
+			return false;
+		}
+		
+		Contact other=(Contact)obj;
+		
+		return firstName.equalsIgnoreCase(other.firstName) &&
+		           lastName.equalsIgnoreCase(other.lastName);
+	}
+	
+	@Override
+	public int hashCode() {
+	    return (firstName.toLowerCase() + lastName.toLowerCase()).hashCode();
+	}
+	
+	
 	// toString for easy display of Contact details
   @Override
   public String toString() {
