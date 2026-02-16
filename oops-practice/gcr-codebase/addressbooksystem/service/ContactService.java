@@ -1,5 +1,10 @@
 package addressbooksystem.service;
 
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.HashMap;
@@ -257,6 +262,112 @@ public class ContactService {
 	public List<Contact> getAllContacts() {
 	    return repository.getAllContacts();
 	}
+	
+	public void saveToFile(String fileName) {
+		
+		try(BufferedWriter writer =new BufferedWriter(new FileWriter(fileName))){
+			
+			for(Contact contact:repository.getAllContacts()) {
+				
+				String line = contact.getFirstName() + "|" +
+                        contact.getLastName() + "|" +
+                        contact.getAddress() + "|" +
+                        contact.getCity() + "|" +
+                        contact.getState() + "|" +
+                        contact.getZip() + "|" +
+                        contact.getPhoneNumber() + "|" +
+                        contact.getEmail();
+				
+				writer.write(line);
+				writer.newLine();
+				
+			}
+			
+			System.out.println("Contacts saved successfully to file.");
+		}catch(IOException e ) {
+			System.out.println(e.getMessage());
+		}
+	}
+	
+	public void loadFromFile(String fileName) {
+		
+		try(BufferedReader reader =new BufferedReader(new FileReader(fileName))){
+			
+			String line;
+			
+			while((line=reader.readLine())!=null) {
+				
+				String[] parts=line.split("\\|");
+				
+				if(parts.length==8) {
+					addNewContact(
+	                        parts[0], parts[1], parts[2],
+	                        parts[3], parts[4], parts[5],
+	                        parts[6], parts[7]
+	                );
+				}
+			}
+			
+			System.out.println("Contacts loaded successfully from file.");
+
+		}catch(IOException e) {
+			System.out.println(e.getMessage());
+		}
+	}
+	
+	public void saveToCSV(String fileName) {
+
+	    try (BufferedWriter writer = new BufferedWriter(new FileWriter(fileName))) {
+
+	        for (Contact contact : repository.getAllContacts()) {
+
+	            String line = contact.getFirstName() + "," +
+	                          contact.getLastName() + "," +
+	                          contact.getAddress() + "," +
+	                          contact.getCity() + "," +
+	                          contact.getState() + "," +
+	                          contact.getZip() + "," +
+	                          contact.getPhoneNumber() + "," +
+	                          contact.getEmail();
+
+	            writer.write(line);
+	            writer.newLine();
+	        }
+
+	        System.out.println("Contacts saved to CSV successfully.");
+
+	    } catch (IOException e) {
+	        System.out.println("Error writing CSV: " + e.getMessage());
+	    }
+	}
+
+	
+	public void loadFromCSV(String fileName) {
+
+	    try (BufferedReader reader = new BufferedReader(new FileReader(fileName))) {
+
+	        String line;
+
+	        while ((line = reader.readLine()) != null) {
+
+	            String[] parts = line.split(",");
+
+	            if (parts.length == 8) {
+	                addNewContact(
+	                        parts[0], parts[1], parts[2],
+	                        parts[3], parts[4], parts[5],
+	                        parts[6], parts[7]
+	                );
+	            }
+	        }
+
+	        System.out.println("Contacts loaded from CSV successfully.");
+
+	    } catch (IOException e) {
+	        System.out.println("Error reading CSV: " + e.getMessage());
+	    }
+	}
+
 
 
 	

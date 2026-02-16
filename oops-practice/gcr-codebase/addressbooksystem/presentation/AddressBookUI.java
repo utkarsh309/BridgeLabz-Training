@@ -96,7 +96,16 @@ public class AddressBookUI {
             System.out.println("6. Count by City");
             System.out.println("7. Count by City");
             System.out.println("8. Sort By Name");
-            System.out.println("15. Back");
+            System.out.println("9. Sort By City");
+            System.out.println("10. Sort By State");
+            System.out.println("11. Sort By Zip Code");
+            System.out.println("12. Save to File");
+            System.out.println("13. Load From File ");
+            System.out.println("14. Save to Csv");
+            System.out.println("15. Load From Csv");
+            
+            System.out.println("0. Back");
+            
             System.out.println("--------------------------");
             System.out.print("Enter choice: ");
 
@@ -140,7 +149,20 @@ public class AddressBookUI {
                 case 11:
                 	service.sortingByZip(); //UC-12
                 	
+                case 12:
+                	service.saveToFile("addressbook.txt");
+                	break;
+                case 13:
+                	service.loadFromFile("addressbook.txt");
+                	break;
+                case 14:
+                	service.saveToCSV("addressbook.csv");
+                	break;
                 case 15:
+                	service.loadFromCSV("addressbook.csv");
+                	break;
+                	
+                case 0:
                 	active = false;
                 	break;
                 default :

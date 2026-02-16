@@ -125,7 +125,7 @@ public class Contact {
               "\nState: " + state +
               "\nZip: " + zip +
               "\nPhone: " + phoneNumber +
-              "\nEmail: " + email;
+              "\nEmail: " + email+"\n";
   }
 	
 }
