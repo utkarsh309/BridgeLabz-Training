@@ -263,57 +263,82 @@ public class ContactService {
 	    return repository.getAllContacts();
 	}
 	
-	public void saveToFile(String fileName) {
-		
-		try(BufferedWriter writer =new BufferedWriter(new FileWriter(fileName))){
-			
-			for(Contact contact:repository.getAllContacts()) {
-				
-				String line = contact.getFirstName() + "|" +
-                        contact.getLastName() + "|" +
-                        contact.getAddress() + "|" +
-                        contact.getCity() + "|" +
-                        contact.getState() + "|" +
-                        contact.getZip() + "|" +
-                        contact.getPhoneNumber() + "|" +
-                        contact.getEmail();
-				
-				writer.write(line);
-				writer.newLine();
-				
-			}
-			
-			System.out.println("Contacts saved successfully to file.");
-		}catch(IOException e ) {
-			System.out.println(e.getMessage());
-		}
-	}
-	
-	public void loadFromFile(String fileName) {
-		
-		try(BufferedReader reader =new BufferedReader(new FileReader(fileName))){
-			
-			String line;
-			
-			while((line=reader.readLine())!=null) {
-				
-				String[] parts=line.split("\\|");
-				
-				if(parts.length==8) {
-					addNewContact(
-	                        parts[0], parts[1], parts[2],
-	                        parts[3], parts[4], parts[5],
-	                        parts[6], parts[7]
-	                );
-				}
-			}
-			
-			System.out.println("Contacts loaded successfully from file.");
+	public void saveToFileAsync(String fileName) {
 
-		}catch(IOException e) {
-			System.out.println(e.getMessage());
-		}
+	    Runnable saveTask = new Runnable() {
+
+	        @Override
+	        public void run() {
+
+	            try (BufferedWriter writer = new BufferedWriter(new FileWriter(fileName))) {
+
+	                for (Contact contact : repository.getAllContacts()) {
+
+	                    String line = contact.getFirstName() + "|" +
+	                                  contact.getLastName() + "|" +
+	                                  contact.getAddress() + "|" +
+	                                  contact.getCity() + "|" +
+	                                  contact.getState() + "|" +
+	                                  contact.getZip() + "|" +
+	                                  contact.getPhoneNumber() + "|" +
+	                                  contact.getEmail();
+
+	                    writer.write(line);
+	                    writer.newLine();
+	                }
+
+	                System.out.println("Contacts saved successfully (Background Thread).");
+
+	            } catch (IOException e) {
+	                System.out.println("Error writing file: " + e.getMessage());
+	            }
+	        }
+	    };
+
+	    Thread thread = new Thread(saveTask);
+	    thread.start();
+
+	    System.out.println("Save operation started in background...");
 	}
+
+	public void loadFromFileAsync(String fileName) {
+
+	    Runnable loadTask = new Runnable() {
+
+	        @Override
+	        public void run() {
+
+	            try (BufferedReader reader = new BufferedReader(new FileReader(fileName))) {
+
+	                String line;
+
+	                while ((line = reader.readLine()) != null) {
+
+	                    String[] parts = line.split("\\|");
+
+	                    if (parts.length == 8) {
+	                        addNewContact(
+	                                parts[0], parts[1], parts[2],
+	                                parts[3], parts[4], parts[5],
+	                                parts[6], parts[7]
+	                        );
+	                    }
+	                }
+
+	                System.out.println("Contacts loaded successfully (Background Thread).");
+
+	            } catch (IOException e) {
+	                System.out.println("Error reading file: " + e.getMessage());
+	            }
+	        }
+	    };
+
+	    Thread thread = new Thread(loadTask);
+	    thread.start();
+
+	    System.out.println("Load operation started in background...");
+	}
+
 	
 	public void saveToCSV(String fileName) {
 

@@ -150,10 +150,10 @@ public class AddressBookUI {
                 	service.sortingByZip(); //UC-12
                 	
                 case 12:
-                	service.saveToFile("addressbook.txt");
+                	service.saveToFileAsync("addressbook.txt");
                 	break;
                 case 13:
-                	service.loadFromFile("addressbook.txt");
+                	service.loadFromFileAsync("addressbook.txt");
                 	break;
                 case 14:
                 	service.saveToCSV("addressbook.csv");
