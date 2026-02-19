@@ -242,6 +242,40 @@ The repository is updated regularly to maintain a clear and transparent record o
 
 ---
 
+### 🔹 [12-Feb-2026 (Thursday)]
+-    Began development of UC1.1 for the Health Clinic application.
+
+---
+
+### 🔹 [13-Feb-2026 (Friday)]
+-    Attended the Power Skills session and focused on improving communication and professional development skills.
+
+---
+
+### 🔹 [16-Feb-2026 (Monday)]
+-    Solved the Food Delivery Order Routing System scenario-based problem.
+
+---
+
+### 🔹 [17-Feb-2026 (Tuesday)]
+-    Solved the Employee Wage Computation scenario-based problem.
+
+---
+
+### 🔹 [18-Feb-2026 (Wednesday)]
+-   Completed implementation of Address Book System use cases (UC-8 to UC-18).
+
+---
+
+### 🔹 [19-Feb-2026 (Thursday)]
+-   Implemented UC1 – Feet Measurement Equality feature in the Quantity Measurement App.
+
+---
+
+
+
+
+
 
 
 ## 📈 Progress Tracking
